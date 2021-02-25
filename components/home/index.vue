@@ -1,0 +1,47 @@
+<template>
+  <div>
+    <SectionHead :sectionHeadDataProp="sectionHeadData" />
+    <SectionBenefits :sectionBenefitDataProp="sectionBenefitData" />
+    <SectionServices :servicesProp="services" />
+  </div>
+</template>
+<script>
+import params from "@/config/params.js";
+import SectionHead from "./sections/section_head";
+import SectionBenefits from "./sections/section_benefits";
+import SectionServices from "./sections/section_services";
+export default {
+  components: {
+    SectionHead,
+    SectionBenefits,
+    SectionServices
+  },
+  data() {
+    return {
+      sectionHeadData: {},
+      sectionBenefitData: {},
+      services: {}
+    };
+  },
+  created() {
+    this.fetchData();
+  },
+  methods: {
+    async fetchData() {
+      const { data } = await this.$axios.get(
+        params.baseUrl + "/payload/home.json"
+      );
+      this.sectionHeadData = {
+        backgroundImageUrl: data.section_head.background_image.url,
+        imageUrl: data.section_head.image.url,
+        title: data.section_head.title,
+        subtitle: data.section_head.subtitle,
+        button1: data.section_head.button_1,
+        button2: data.section_head.button_2
+      };
+      this.sectionBenefitData = data.section_vorteile;
+      this.services = data.section_services;
+    }
+  }
+};
+</script>

@@ -1,6 +1,7 @@
 <template>
   <div>
     <SectionHead :sectionHeadDataProp="sectionHeadData" />
+    <SectionReferences :sectionReferenceDataProp="sectionReferenceDataProp" />
     <SectionBenefits :sectionBenefitDataProp="sectionBenefitData" />
     <SectionServices :servicesProp="services" />
     <SectionContact :sectionContactDataProp="sectionContactDataProp" />
@@ -12,19 +13,22 @@ import SectionHead from "./sections/section_head";
 import SectionBenefits from "./sections/section_benefits";
 import SectionServices from "./sections/section_services";
 import SectionContact from "./sections/section_contact";
+import SectionReferences from "./sections/section_references";
 export default {
   components: {
     SectionHead,
     SectionBenefits,
     SectionServices,
-    SectionContact
+    SectionContact,
+    SectionReferences
   },
   data() {
     return {
       sectionHeadData: {},
       sectionBenefitData: {},
       services: {},
-      sectionContactDataProp: {}
+      sectionContactDataProp: {},
+      sectionReferenceDataProp: {}
     };
   },
   created() {
@@ -51,6 +55,7 @@ export default {
         description: data.section_contact.description,
         button: data.section_contact.button
       };
+      this.sectionReferenceDataProp = data.section_referenzen;
     }
   }
 };

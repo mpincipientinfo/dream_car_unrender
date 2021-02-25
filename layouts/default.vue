@@ -33,7 +33,6 @@ export default {
         navBarList: data.section_navbar.image.page_links,
         navBarButton: data.section_navbar.image.button
       };
-      console.log("data", data);
       this.footerData = {
         imgUrl: data.section_footer.image.url,
         title: data.section_footer.title,

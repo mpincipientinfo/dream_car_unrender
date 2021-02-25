@@ -2,6 +2,7 @@ export default {
   server: {
     host: 0
   },
+  target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "dream_car_unrender",
@@ -25,7 +26,9 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
+  buildModules: [
+    '@nuxtjs/dotenv'
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

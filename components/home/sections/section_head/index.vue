@@ -18,16 +18,16 @@
           <b-col
             lg="6"
             md="12"
-            class="pt-4 justify-content-lg-end justify-content-center d-flex"
+            class=" justify-content-lg-end justify-content-center d-flex"
           >
-            <a href="#" class="btn-red btn">{{ button1 }}</a>
+            <a href="#" class="btn-red btn text-uppercase">{{ button1 }}</a>
           </b-col>
           <b-col
             lg="6"
             md="12"
-            class="pt-4 justify-content-lg-start justify-content-center d-md-flex d-none"
+            class=" justify-content-lg-start justify-content-center d-md-flex d-none"
           >
-            <a href="#" class="btn-blue btn">{{ button2 }}</a>
+            <a href="#" class="btn-blue btn text-uppercase">{{ button2 }}</a>
           </b-col>
         </b-row>
       </div>
@@ -63,6 +63,15 @@ export default {
 };
 </script>
 <style scoped>
+.justify-content-lg-start{
+	padding-left:5px
+}
+.justify-content-lg-end{
+	padding-right:25px
+}
+.h-100 .w-100{
+	padding-top:40px!important;
+}
 .background_image {
   height: 800px;
 }
@@ -70,6 +79,7 @@ export default {
   font-family: Open Sans, sans-serif !important;
   font-size: 2.3125rem;
   padding-top: 27px;
+  letter-spacing:1px;
 }
 .subtitle {
   font-family: Open Sans, sans-serif !important;

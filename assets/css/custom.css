@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Mulish:wght@200;300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
 .hover-text-decoration-none:hover {
   text-decoration: none;
@@ -60,11 +61,18 @@
   transition: all 0.2s ease-out;
 }
 .btn-red-expand:hover {
-  transition: all 1s !important;
-  width: 278px;
-  letter-spacing: 2px;
+    background: linear-gradient(90deg,#730309,#e50612)!important;
+    transition: all 0.5s!important;
+    width: 262px;
+    letter-spacing: 2px;
 }
 .btn-red-expand {
-  transition: all 1s !important;
-  min-width: 223px;
+  transition: all 0.5s !important;
+  width: 223px;
 }
+.text-light {
+    color: #fff !important;
+}
+
+
+

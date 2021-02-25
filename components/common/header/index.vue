@@ -55,6 +55,32 @@ export default {
 };
 </script>
 <style scoped>
+.list-group a.hover-text-decoration-none.d-flex.align-self-center{
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: Open Sans,sans-serif!important;
+    font-size: 1.0625rem;
+    font-weight: 500!important;
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+    color: #fff!important;
+    }
+ .list-group .list-group-item.text-uppercase{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 26px;
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+.w-100 {
+    padding-top: 40px;
+}
+ .list-group .list-group-item{
+    padding: 0.75rem 0rem;
+}
+ .justify-content-lg-start, .justify-content-lg-end{
+	padding:0px
+}
 .header {
   width: 100%;
   padding: 0 7% 7px;

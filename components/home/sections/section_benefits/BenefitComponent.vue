@@ -39,7 +39,21 @@ export default {
 .count {
   font-family: Open Sans, sans-serif !important;
   font-size: 5rem;
-  font-weight: 700;
+  font-weight: 600;
   color: hsla(0, 0%, 100%, 0.16);
 }
+.description{
+    font-family: Open Sans,sans-serif!important;
+    font-size: 1.0625rem;
+    color: #fff;
+    line-height: 2;
+    padding-top: 26px;
+}
+.title[data-v-76389483]{
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff;
+    padding-top: 20px !important;
+    line-height: 39px;
+  }
 </style>

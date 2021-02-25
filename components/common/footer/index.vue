@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- main section -->
-    <div class="pt-5 mt-5 pb-5 mb-5">
+    <div class="footer">
       <div class="d-flex flex-column">
         <div class="home__logo text-center">
           <div class="text-center">
@@ -13,7 +13,7 @@
             </div>
             <p class="title mt-3 pt-1 mb-3">{{ title }}</p>
             <!-- page links -->
-            <div>
+            <div class="pt-40">
               <div
                 align-v="center"
                 class="d-flex justify-content-center align-self-center"
@@ -57,8 +57,8 @@
       </div>
     </div>
     <!-- social div -->
-    <div class="social_parent pb-5 pt-4">
-      <div class="container mt-5">
+    <div class="social_parent">
+      <div class="container">
         <b-row>
           <div class="col-lg-4 text-center">
             <a href="tel:+436763893322" class="social_meta">
@@ -92,8 +92,8 @@
       </div>
     </div>
     <!-- copyright -->
-    <div class="copyright text-center pt-2 pb-2">
-      <h6 class="my-1 copyright_text">
+    <div class="copyright text-center">
+      <h6 class="copyright_text">
         ©copyright 2021 M2-wunschauto . All Rights Reserved
       </h6>
     </div>
@@ -136,6 +136,8 @@ export default {
 }
 .social_parent {
   background: #f8f9fa;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
 }
 .social_meta:hover,
 .social_meta {
@@ -145,10 +147,26 @@ export default {
 .copyright_text {
   font-family: Open Sans, sans-serif !important;
   font-size: 0.875rem;
-  font-weight: lighter;
   color: #fff;
+  margin-bottom:0px;
 }
 .copyright {
   background-color: #182540;
+    padding-top: 11px;
+    padding-bottom: 10px;
+}
+.pt-40{
+	padding-top:40px;
+	padding-bottom:12px;
+}
+.footer a{
+	padding:0px!important;
+}
+.footer{
+	padding:100px 0px;
+}
+.footer .list-group-item{
+	padding:0px 25px !important;
+	font-size:17px;
 }
 </style>

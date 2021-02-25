@@ -4,7 +4,7 @@
   >
     <h3 class="subtitle mb-1">{{ subtitle }}</h3>
     <h2 class="title pt-4 pb-6">{{ title }}</h2>
-    <b-container class="bv-example-row">
+    <b-container class="bv-example-row counter-number">
       <b-row>
         <b-col v-for="(benefit, index) in benefits" :key="index">
           <BenefitComponent
@@ -46,16 +46,20 @@ export default {
 .benefit_parent {
   background-color: #182540;
   color: #fff;
+  padding-bottom:80px;
 }
 .subtitle {
   font-size: 1.125rem;
   font-weight: 600;
   padding-top: 140px;
   font-family: "Mulish", sans-serif;
+  margin-bottom:8px !important;
 }
-.title {
+ .title {
   font-family: Lora, serif !important;
   font-size: 2.625rem;
   padding-bottom: 60px;
+  padding-top:20px!important;
 }
+
 </style>

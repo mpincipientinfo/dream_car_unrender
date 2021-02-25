@@ -59,3 +59,12 @@
   background-color: #1c2b4b !important;
   transition: all 0.2s ease-out;
 }
+.btn-red-expand:hover {
+  transition: all 1s !important;
+  width: 278px;
+  letter-spacing: 2px;
+}
+.btn-red-expand {
+  transition: all 1s !important;
+  min-width: 223px;
+}

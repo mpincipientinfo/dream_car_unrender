@@ -4,7 +4,7 @@
       <!-- For first record: display image in right, for second record: display image in left & continue same pattern -->
       <!-- image in right -->
       <b-col lg="6" class="d-none d-md-block p-0 " v-if="count % 2 != 0">
-        <img :src="service.image.url" class="w-100 fluid image" />
+        <img :src="service.image.url" class="w-100 fluid image h-100" />
       </b-col>
       <b-col
         lg="6"
@@ -18,10 +18,10 @@
           <p class="list_title pb-3">{{ list.title }}</p>
         </div>
         <div
-          class="d-flex flex-sm-row justify-content-center justify-content-sm-start flex-column w-100"
+          class=" mb-2  d-flex flex-sm-row justify-content-center justify-content-sm-start flex-column w-100"
         >
           <div class="align-self-center">
-            <a href="#" class="btn-red button ">
+            <a href="#" class="btn-red button btn btn-red-expand">
               {{ service.button }}
             </a>
           </div>
@@ -43,7 +43,7 @@
       </b-col>
       <!-- image in left -->
       <b-col lg="6" class="d-none d-md-block p-0" v-if="count % 2 == 0">
-        <img :src="service.image.url" class="w-100 fluid" />
+        <img :src="service.image.url" class="w-100 fluid h-100" />
       </b-col>
     </b-row>
   </div>
@@ -76,42 +76,6 @@ export default {
   font-size: 1.0625rem;
   color: #182540;
   padding-left: 41px;
-}
-.btn-red:hover {
-  transition: all 0.5s !important;
-  width: 262px;
-  letter-spacing: 2px;
-  text-decoration: none !important;
-  border: 0;
-  font-family: Open Sans, sans-serif !important;
-  font-size: 1.125rem;
-  font-size: 1.125rem !important;
-  transition: all 0.5s !important;
-  height: 59px;
-  text-align: center;
-  border-radius: 60px !important;
-  background: linear-gradient(90deg, #e50612, #730309) !important;
-  color: #fff !important;
-  padding-top: 14px;
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-}
-.btn-red:hover:before {
-  opacity: 1;
-}
-.btn-red:before {
-  border-radius: 60px !important;
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(90deg, #730309, #e50612) !important;
-  z-index: -1;
-  transition: opacity 0.5s linear;
-  opacity: 0;
 }
 .image {
   position: absolute;

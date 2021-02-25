@@ -17,8 +17,8 @@
               v-for="(navBar, index) in navBarList"
               :key="index"
             >
-              <b-list-group-item class="bg-transparent border-0">
-                {{ navBar.title.toUpperCase() }}
+              <b-list-group-item class="bg-transparent border-0 text-uppercase">
+                {{ navBar.title }}
               </b-list-group-item>
             </nuxt-link>
             <nuxt-link to="#" class="hover-text-decoration-none">

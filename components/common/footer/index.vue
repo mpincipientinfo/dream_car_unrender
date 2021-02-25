@@ -21,7 +21,7 @@
                 <div class="list-group list-group-horizontal">
                   <a
                     href="/#"
-                    class="btn d-flex align-self-center link"
+                    class="btn d-flex align-self-center link text-uppercase"
                     v-for="(pageLink, index) in pageLinks"
                     :key="index"
                   >

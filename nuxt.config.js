@@ -1,7 +1,8 @@
 export default {
-	serve:{
-		host:0
-	},
+  server: {
+    host: 0
+  },
+  target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "dream_car_unrender",
@@ -17,16 +18,17 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["@/assets/css/custom.css"],
+  css: ["@/assets/css/custom.css","@splidejs/splide/dist/css/splide.min.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
-
+  plugins: [{ src: "./plugins/carousel.js", mode: "client" }],
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
+  buildModules: [
+    '@nuxtjs/dotenv'
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -37,7 +39,9 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {}

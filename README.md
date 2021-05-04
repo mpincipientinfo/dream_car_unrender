@@ -1,7 +1,7 @@
 # dream_car_unrender
 
 ## Requirements
->>We are looking for someone to help us translate XD files into Nuxt.js applications and integrate them with wordpress sites (We have prepared well written api docs)
+We are looking for someone to help us translate XD files into Nuxt.js applications and integrate them with wordpress sites (We have prepared well written api docs)
 
 Our highest priority is to write clean code, so it's easily maintainable for other developers (like myself), when I need to do quick fixes for clients.
 Here is the task
@@ -26,12 +26,12 @@ If you're interested, we also have some server stuff to do with wordpress or nod
 I've already prepared a javascript payload file to simulate the api for the test run, so you can have all data, but you don't have to take the time to include an api.
 
 
->>Meanwhile I decided for the test-run, that it's best for the page to simulate an api call with a payload file in json format, which I'll send you. That means you will receive a payload file for the content of the homepage and a payload file for shared contents like navbar and footer. These files should simulate an api call, so you can import all dynamic data on the index page and deliver it to its subcomponents. All data on the page therefore is dynamic.
+Meanwhile I decided for the test-run, that it's best for the page to simulate an api call with a payload file in json format, which I'll send you. That means you will receive a payload file for the content of the homepage and a payload file for shared contents like navbar and footer. These files should simulate an api call, so you can import all dynamic data on the index page and deliver it to its subcomponents. All data on the page therefore is dynamic.
 
 Also, for the test-run, you can complete skip the responsiveness, so you don't have to write css for mobile.
 
 
->>The main purpose of this task and all future task is to simply deliver ultra clean code, that is extremely maintainable and easy to understand for other developers. I do NOT mean comments in the code, but really good file architecture, code architecture and self-explaining variable names
+The main purpose of this task and all future task is to simply deliver ultra clean code, that is extremely maintainable and easy to understand for other developers. I do NOT mean comments in the code, but really good file architecture, code architecture and self-explaining variable names
 
 The hierarchical structure of folders and files need to match the hierarchical structure of template components
 
